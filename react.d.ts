@@ -23,8 +23,8 @@ declare namespace React {
         ref?: Ref<T>;
     }
 
-    interface ReactElement<T extends Component<P, any>, P> {
-        type: string | ComponentClass<T> | SFC<T>;
+    interface ReactElement<P> {
+        type: string | ComponentClass<P> | SFC<P>;
         props: P;
         key?: Key;
     }
