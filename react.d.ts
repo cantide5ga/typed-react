@@ -179,6 +179,9 @@ declare namespace React {
         };
     }
 
+    // https://facebook.github.io/react/docs/react-api.html#react.purecomponent
+    class PureComponent<P, S> extends Component<P, S> { }
+
     interface ClassicComponent<P, S> extends Component<P, S> {
         replaceState(nextState: S, callback?: () => any): void;
         isMounted(): boolean;
